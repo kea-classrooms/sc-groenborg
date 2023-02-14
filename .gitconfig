@@ -1,0 +1,8 @@
+[alias]
+	root = rev-parse --show-toplevel
+	co = checkout
+	cb = checkout -
+	ada = add --all
+	st = status
+	tree = log --graph --oneline --all
+	br = branch -a
