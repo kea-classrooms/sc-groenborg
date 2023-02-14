@@ -6,6 +6,8 @@
 	st = status
 	tree = log --graph --oneline --all
 	br = branch -a
-	undo = revert --soft HEAD~1
+	undo = reset --soft HEAD~1
 	mergetest = "!f(){ git merge --no-commit --no-ff \"$1\"; git merge --abort; echo \"Merge aborted\"; };f "
 	
+[push]
+	default = current
